@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function check(str) {
+            let s= str.split("");
+            let so =s.filter((num)=>num.charCodeAt(0)>47&&num.charCodeAt(0)<59 ).join("");
+            let chu =s.filter((char)=>(char.charCodeAt(0)>=65&&char.charCodeAt(0)<=90)||(char.charCodeAt(0)>=98&&char.charCodeAt(0)<=122)).join("");
+            let kitu =s.filter((char=>char.charCodeAt(0)<=47)||char.charCodeAt(0)>122||(char.charCodeAt(0)>57&&charCodeAt(0)<65)||(char.charCodeAt(0)>90&&charCodeAt(0)<97)).join("");
+            return chu+so+kitu;
+        }
+        let str=prompt("Nhap 1 chuoi bat ky");
+        console.log(check(str));
+    </script>
+</body>
+</html>

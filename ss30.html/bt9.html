@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 9</title>
+</head>
+<body>
+    <script>
+        function fibonaci(n) {
+            if (n==1||n==2) 
+            {
+                return 1;
+            }
+            else if(n==0)
+            {
+                return 0;
+            }
+            return fibonaci(n-1)+fibonaci(n-2);
+        }
+        console.log  (fibonaci(3));
+    </script>
+</body>
+</html>

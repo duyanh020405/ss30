@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = ['a','b','c','c','b','a']
+        var arr2 = [1,2,3,2,1]
+        var arr3 = [ 1,2,3,4,5]
+        let count = 0;
+        let a = arr1.length/2
+        if(arr1.length % 2 == 0){
+        for(let i = 0 ; i<=a ;i++){
+            for(let k = arr1.length; k>=a ;--k)
+            if(arr1[i] == arr1[k]){
+                count+=1
+            }
+            
+        }    
+
+    }
+    if(count == a){
+                console.log("yess")
+            }
+            else{
+                console.log("noooo")  
+            }
+        
+     </script>
+</body>
+</html>
